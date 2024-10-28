@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Passwords</title>
+    <link rel="stylesheet" href="./assets/css/styles.css"> 
+</head>
+<body>
+
+<p>Tarea 3: Validar Password</p> 
+
+<div class="pass-container">
+    <p class="pass-text">Ingresa la password</p> 
+
+    <div class="select-container">
+        <select id="select1">
+            <option value="0">0</option>            
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>            
+        </select>
+        
+        <select id="select2">
+            <option value="0">0</option>            
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>            
+        </select>
+        
+        <select id="select3">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>            
+        </select>
+    </div>
+
+    <button id="ingresar">Ingresar</button>
+    <p id="resultadoPass"></p>
+</div>
+
+<script>
+    document.getElementById('ingresar').addEventListener('click', () => {
+        const password = document.getElementById('select1').value + 
+                        document.getElementById('select2').value + 
+                        document.getElementById('select3').value;
+        
+        const resultado = document.getElementById('resultadoPass');
+        if (password === '911') {
+            resultado.textContent = 'Password 1 correcto';
+        } else if (password === '714') {
+            resultado.textContent = 'Password 2 correcto';
+        } else {
+            resultado.textContent = 'Password incorrecto';
+        }
+    });
+</script>
+
+</body>
+</html>

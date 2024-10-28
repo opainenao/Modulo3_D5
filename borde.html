@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen con Borde</title>
+    <link rel="stylesheet" href="./assets/css/styles.css"> 
+</head>
+<body>
+
+<p> Tarea 1. Imagen con Borde</p> 
+<img id="Imagen1" src="./assets/img/imagenBorde.jpg" alt="Imagen">
+
+<script>
+    const imagen = document.getElementById('Imagen1');
+    let tieneBorde = false;
+
+    imagen.addEventListener('click', () => {
+        if (tieneBorde) {
+            imagen.classList.remove('border');
+        } else {
+            imagen.classList.add('border');
+        }
+        tieneBorde = !tieneBorde;
+    });
+</script>
+
+</body>
+</html>
