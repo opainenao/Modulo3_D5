@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Regalos de Navidad</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>¡Elige tus regalos de Navidad!</h1>
+    <form id="giftForm" action="mailto:opainenaomaldonado@gmail.com" method="post" enctype="text/plain">
+
+      <h2>Regalos Económicos</h2>
+      <div class="gift-option">
+        <input type="radio" id="gift1" name="economico" value="Pelota">
+        <label for="gift1">Pelota (fútbol, básquetbol, etc.)</label>
+      </div>
+      <div class="gift-option">
+        <input type="radio" id="gift2" name="economico" value="Ropa">
+        <label for="gift2">Ropa (Roblox, Minecraft, Lego, superhéroe, etc.)</label>
+      </div>
+      <div class="gift-option">
+        <input type="radio" id="gift3" name="economico" value="Juego de Mesa">
+        <label for="gift3">Juego de mesa (Ludo, ajedrez, etc.)</label>
+      </div>
+      <div class="gift-option">
+        <input type="radio" id="gift32" name="economico" value="Lego">
+        <label for="gift7">LEGO (- 200 piezas)</label>
+        <div class="lego-images">
+            <a href="https://www.tiendalego.cl/products/sabueso-cazadragones-de-imperium-71790?_pos=3&_sid=c0d025fc8&_ss=r" target="_blank">
+                <img src="./assets/img/71806_boxprod_995x995.webp" alt="LEGO 100 piezas" class="lego-img">
+              </a>            
+          
+        </div>          
+      </div>      
+
+      <h2>Regalos Medianamente Costosos</h2>
+      <div class="gift-option">
+        <input type="radio" id="gift4" name="medianamente" value="Libros">
+        <label for="gift4">Libros (aventuras, Minecraft, Fénix, etc.)</label>
+      </div>
+      <div class="gift-option">
+        <input type="radio" id="gift5" name="medianamente" value="Set para Pintar">
+        <label for="gift5">Set para pintar cuadros (pinturas y lienzos)</label>
+      </div>
+      <div class="gift-option">
+        <input type="radio" id="gift6" name="medianamente" value="Accesorio para Piscina">
+        <label for="gift6">Accesorios para piscina (lentes, traje de baño, juegos, etc.)</label>
+      </div>
+      <div class="gift-option">
+        <input type="radio" id="gift7" name="medianamente" value="Lego">
+        <label for="gift7">LEGO (+ de 200 y - de 700     piezas)</label>
+        <div class="lego-images">
+            <a href="https://www.tiendalego.cl/products/mech-elemental-de-la-tierra-de-cole-71806?_pos=6&_sid=c0d025fc8&_ss=r" target="_blank">
+                <img src="./assets/img/71790_boxprod_995x995.webp" alt="LEGO 100 piezas" class="lego-img">
+              </a>            
+          
+        </div>          
+      </div>
+
+      <h2>Regalos Costosos</h2>
+      <div class="gift-option">
+        <input type="radio" id="gift7" name="costoso" value="Celular">
+        <label for="gift7">Celular</label>
+      </div>
+      <div class="gift-option">
+        <input type="radio" id="gift8" name="costoso" value="Tablet">
+        <label for="gift8">Tablet</label>
+      </div>
+      <div class="gift-option">
+        <input type="radio" id="gift9" name="costoso" value="Bicicleta">
+        <label for="gift9">Bicicleta</label>
+      </div>
+      <div class="gift-option">
+        <input type="radio" id="gift10" name="costoso" value="Lego">
+        <label for="gift10">LEGO (+ de 700 piezas)</label>
+        <div class="lego-images">
+            <a href="https://www.tiendalego.cl/products/meca-titan-de-jay-lego-ninjago-71785?_pos=48&_sid=c0d025fc8&_ss=r" target="_blank">
+                <img src="./assets/img/71785_boxprod_995x995.webp" alt="LEGO 100 piezas" class="lego-img">
+              </a>            
+          
+        </div>
+      </div>
+
+      <button type="submit" id="submitButton" disabled>Enviar</button>
+    </form>
+    <p id="thankYouMessage" class="hidden">¡Gracias, se despide Viejito Pascuero. Nos vemos!</p>
+  </div>
+  <script src="./assets/css/js/script.js"></script>
+</body>
+</html>
